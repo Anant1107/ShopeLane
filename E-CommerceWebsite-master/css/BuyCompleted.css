@@ -1,0 +1,33 @@
+.Linkcolor{
+    color: black;
+    text-decoration: none;
+}
+.space{
+    height: 78px;
+}
+
+.Congo{
+    text-align: center;
+    color: green;
+    margin-top: 100px;
+    font-size: 50px;
+}
+.text{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+.thank{
+    margin-top: 0px;
+    text-align: center;
+    font-size: 35px;
+    padding: 0px;
+}
+.Continue{
+    margin-top: 200px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(5, 199, 5);
+}

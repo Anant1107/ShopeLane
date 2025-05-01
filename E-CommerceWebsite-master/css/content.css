@@ -1,0 +1,162 @@
+body
+{
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+h1
+{
+    width: 90%;
+    margin: auto;
+    padding: 50px 0;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+#containerClothing, #containerAccessories
+{
+    display: grid;
+    grid-gap: 70px 40px;
+    grid-template-columns: repeat(4, 1fr);
+    width: 90%;
+    margin: auto;
+    padding-bottom: 40px;
+
+}
+#box 
+{
+    width: 100%;
+    background-color: white;
+    align-content: center;
+    border-radius: 0px;
+    box-shadow: 1px 2px 6px 2px rgb(219, 219, 219);
+}
+#box:hover
+{
+    box-shadow: 1px 6px 3px 0 rgb(185, 185, 185);
+}
+#containerClothing img
+{
+    padding: 5px;
+    width: 97%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.imageCards{
+    border-radius: 20px;
+    box-shadow: 1px 6px 3px 0 rgb(185, 185, 185);
+}
+.Title{
+    margin-top: 0px;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    font-size: xx-large;
+}
+.price{
+    font-size: x-large;
+    margin-left: 5px;
+    margin-bottom: 0px;
+}
+.delivery{
+    margin-left: 10px;
+    margin-top: 0px;
+    font-size: 9px;
+}
+.Linkcolor{
+    color: black;
+    text-decoration: none;
+}
+#containerAccessories img
+{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#details
+{
+    padding: 0 15px;
+    text-transform: capitalize;
+}
+#box a 
+{
+    text-decoration: none;
+    color: rgb(29, 29, 29);
+}
+h3
+{
+    font-size: 16px;
+}
+h4
+{
+    font-weight: 100;
+}
+h2
+{
+    color: rgb(3, 94, 94);
+}
+
+/* ----------------------------- MEDIA QUERY --------------------------- */
+
+@media(max-width: 1070px)
+{
+    h1
+    {
+        font-size: 25px;
+    }
+    #containerClothing, #containerAccessories
+    {
+        width: 95%;
+        grid-gap: 10px;
+    }
+}
+@media(max-width: 850px)
+{
+    h1 
+    {
+        width: 80%;
+    }
+    #containerClothing, #containerAccessories
+    {
+        display: grid;
+        grid-gap: 70px 20px;
+        grid-template-columns: repeat(3, 1fr);
+        width: 80%;
+    }    
+}
+@media(max-width: 650px)
+{
+    h1
+    {
+        font-size: 20px;
+    }
+    h1 
+    {
+        width: 90%;
+    }
+    #containerClothing, #containerAccessories
+    {
+        width: 90%;
+    }
+}
+@media(max-width: 600px)
+{
+    h1 
+    {
+        width: 70%;
+    }
+    #containerClothing, #containerAccessories
+    {
+        width: 70%;
+    }
+}
+@media(max-width: 505px)
+{
+    h1 
+    {
+        width: 80%;
+    }
+    #containerClothing, #containerAccessories
+    {
+        width: 80%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

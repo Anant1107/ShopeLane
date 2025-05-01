@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>banana leaf bag</title>
+    <link rel="stylesheet" href="css/ProductDescription.css">
+</head>
+
+<body>
+    <div id="1"></div>
+    <script>
+        load("header.html");
+        function load(url) {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(1).innerHTML = req.responseText;
+        }
+    </script>
+    <div class="space"></div>
+    <div class="maincontainer">
+        <div class="DescImage">
+            <img class="ProductImg" src="img/banana leaf bag.jpg" alt="">
+        </div>
+        <div class="Description">
+            <p class="ProdDisc">
+                Carry sustainability in style with our banana leaf bags, handcrafted from natural, biodegradable banana leaves.These bags are not just eco-friendly but also durable, lightweight, and uniquely stylish.
+            </p>
+            <p class="ProdPrice">
+                ₹630/-
+            </p>
+            <p class="count">
+                per 10pcs
+                <br>
+                *free delivery on bulk orders.
+            </p>
+            <p class="ProdQuant">
+                <label for="quantity">Quantity:</label>
+                <select id="quantity" name="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="5">6</option>
+                    <option value="5">7</option>
+                    <option value="5">8</option>
+                    <option value="5">9</option>
+                    <option value="5">10</option>
+                </select>
+            </p>
+            <button class="buy">
+                <a class="Linkcolor" href="BuyCompleted.html">buy now</a>
+            </button>
+            <button class="cart">
+                add to cart
+            </button>
+        </div>
+    </div>
+
+
+    <div id="4"></div>
+    <script>
+        load("footer.html");
+        function load(url) {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(4).innerHTML = req.responseText;
+        }
+    </script>
+</body>
+
+</html>
